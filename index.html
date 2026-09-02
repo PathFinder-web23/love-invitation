@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Invitation ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="page1" class="page active">
+            <div class="heart">
+</div>
+            <h1>Hey Beautiful 😉</h1>
+            <p>
+                I have a very important question for you...
+            </p>
+            <h2>Will you go on a date with me?</h2>
+            <button onclick="showPage('page2')">
+                YES 🙂‍↕️ 
+            </button>
+            <button class="no-button" onclick="noClick()">
+                NO 😑
+            </button>
+            <p id="noMessage"></p>
+        </div>
+        <div id="page2" class="page">
+            <h1>What's your vibe? 🌚</h1>
+            <p>Choose what you'd like us to do.</p>
+            <div class="options">
+    <button onclick="chooseActivity('🎬Movie Night')">
+        🎬 Movie
+    </button>
+    <button onclick="chooseActivity('🍽 Dinner')">
+        🍽 Dinner
+    </button>
+    <button onclick="chooseActivity('🏖 Beach')">
+        🏖Beach
+    </button>
+    <button onclick="chooseActivity('🎮Games')">
+        🎮Games
+                </button>
+            </div>
+        </div>
+        <div id="page3" class="page">
+            <h1>Pick a date 📆</h1>
+            <p>When are you free?</p>
+            <input type="date" id="date">
+            <br><br>
+            <button onclick="chooseDate()">
+                Continue
+            </button>
+        </div>
+        <div id="page4" class="page">
+            <h1>Pick a time ⏰
+</h1>
+            <p>What time should we meet?</p>
+            <input type="time" id="time">
+            <br><br>
+            <button onclick="finishInvitation()">
+                Confirm 
+            </button>
+        </div>
+        <div id="page5" class="page">
+            <div class="big-heart">
+</div>
+            <h1>I GOT YOU GIRL! 😘
+</h1>
+            <p class="final-message">
+                It's officially a date.
+            </p>
+            <div class="details">
+                <p>📆<strong id="finalDate"></strong></p>
+                <p>⏰<strong id="finalTime"></strong></p>
+                <p>❤️<strong id="finalActivity"></strong></p>
+            </div>
+            <p>
+                Be ready... I'm coming to get you. 🚗❤️ 
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
