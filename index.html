@@ -8,40 +8,68 @@
 </head>
 <body>
     <div class="container">
-        <div id="page1" class="page active">
-            <div class="heart">
-</div>
+     <!-- NAME ENTRY PAGE -->
+      <div id ="namePage" class="page active">
+        <div class="heart">❤️</div>
+        <h1>Before We Begin...🙃</h1>
+        <p> I need to make sure this invitation is for the right person. </p>
+        <h2>What's your name? </h2>
+        <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+        autocomplete="off"
+        >
+        <br><br>
+        <button onclick="checkName()">
+            Continue❤️ 
+        </button>
+        <p id="nameMessage"></p>
+      </div>
+        
+        <!-- PAGE 1 -->
+        <div id="page1" class="page">
+            <div class="heart">❤️</div>
             <h1>Hey Beautiful 😉</h1>
             <p>
                 I have a very important question for you...
             </p>
-            <h2>Will you come meet me at Apapa?</h2>
+            <h2> How will you help this guy spend his time left in EKO? 😏</h2>
             <button onclick="showPage('page2')">
-                YES 🙂‍↕️ 
+                NEXT 🙂‍↕️ 
             </button>
             <button class="no-button" onclick="noClick()">
-                NO 😑
+                EXIT 😑
             </button>
             <p id="noMessage"></p>
         </div>
+        <!-- PAGE 2 -->
         <div id="page2" class="page">
             <h1>What's your vibe? 🌚</h1>
             <p>Choose what you'd like us to do?</p>
             <div class="options">
-    <button onclick="chooseActivity('EYP💦🙃')">
-        🙃 EYP
+    <button onclick="chooseActivity('I want you to eat good food (eat me)🌚')">
+        I want you to eat good food (eat you)🌚
     </button>
-    <button onclick="chooseActivity('🌚Have a fun time, iykyk...')">
-        🌚Have a fun time, iykyk...
+    <button onclick="chooseActivity('Go with me to a comedy show 🍿')">
+        Go with me to a comedy show 🍿
     </button>
-    <button onclick="chooseActivity('SMD🙂‍↕️')">
-        SMD 🙂‍↕️
+    <button onclick="chooseActivity('Sight seeing 🔭 ')">
+        Sight seeing 🔭
     </button>
-    <button onclick="chooseActivity('Go for a run 🏃‍♂️')">
-        Go for a run 🏃‍♂️
+    <button onclick="chooseActivity('Take me on a tour of the nice places you know 🛣️')">
+        Take me on a tour of the nice places you know 🛣️
+        </button>
+    <button onclick="chooseActivity('I want to have a taste of you(eat me)🙂‍↕️')">
+         I want to have a taste of you(eat you)🙂‍↕️
+    </button>
+    <button onclick="chooseActivity('All of the above😘')">
+        All of the above😘
+
                 </button>
             </div>
         </div>
+        <!-- PAGE 3-->
         <div id="page3" class="page">
             <h1>Pick a date 📆</h1>
             <p>When are you free?</p>
@@ -51,25 +79,22 @@
                 Continue
             </button>
         </div>
+        <!-- PAGE 4 -->
         <div id="page4" class="page">
-            <h1>Pick a time ⏰
-</h1>
+            <h1>Pick a time ⏰</h1>
             <p>What time should we meet?</p>
             <input type="time" id="time">
             <br><br>
-            <button onclick="finishInvitation()">
-                Confirm 
-            </button>
+            <button onclick="finishInvitation()">Continue </button>
         </div>
+        <!-- PAGE 5 -->
         <div id="page5" class="page">
             <div class="big-heart">
-</div>
-            <h1>I GOT YOU GIRL! 😘
-</h1>
-            <p class="final-message">
-                It's officially a date.
-            </p>
+        </div>
+            <h1>THAT'S MY GIRLLL! 😘</h1>
+            <p class="final-message">It's officially a date and if it doesn't work out you'll get the best at school 🙂‍↕️ </p>
             <div class="details">
+                <p><strong id ="recipientName"></strong></p>
                 <p>📆<strong id="finalDate"></strong></p>
                 <p>⏰<strong id="finalTime"></strong></p>
                 <p>❤️<strong id="finalActivity"></strong></p>
